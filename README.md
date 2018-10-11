@@ -16,6 +16,8 @@ This example assumes there is no way to safely store that client secret. Therefo
 
 The Authorization Code Grant is what’s known as a redirect-based flow. This implies that a user agent, typically a web browser, along with an HTTP server need to be used in this flow. So what this means in our scenario is that the CLI needs to first launch a web browser for the user to authenticate and authorize the application to access the API, and then secondly retrieve the authorization code that is returned to the callback or redirect URI. The CLI does this second piece by spinning up a temporary HTTP server with an endpoint that corresponds to that callback. Finally, the CLI exchanges the authorization code for a token(s).
 
+Finally, [token validation](https://auth0.com/docs/api-auth/tutorials/verify-access-token) and [calling an API with an access token](https://auth0.com/docs/api-auth/tutorials/adoption/api-tokens) are outside the scope of this example.
+
 Configuration
 -------------
 
