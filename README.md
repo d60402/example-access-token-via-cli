@@ -5,7 +5,7 @@ For more details, see https://auth0.com/docs/integrations/using-auth0-to-secure-
 
 Assumptions
 -----------
-This example also assumes you are familiar with Auth0, and have created an [API](https://auth0.com/docs/apis) and an [Application](https://auth0.com/docs/applications) (of type Native) in the Auth0 Dashboard.
+This example assumes you are familiar with Auth0, and have created an [API](https://auth0.com/docs/apis) and an [Application](https://auth0.com/docs/applications) (of type Native) in the Auth0 Dashboard.
 
 This example also assumes you are familiar with Node.js. However, the same concepts should apply to most languages and platforms.
 
