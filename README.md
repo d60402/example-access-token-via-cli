@@ -35,9 +35,10 @@ const SCOPE = '';
 
 Run It
 ------
-- From a terminal command line, run the CLI with the command `node cli.js`. The default browser should be launched to the `/authorize` endpoint where the user can login with credentials in an Auth0 connection that is enabled for the application.
-- After first authentication, a consent dialog should be displayed.
-- Once consent is given, the response will be redirected to the callback/redirect URL where the CLI will retrive the authorization code.
-- Finally, the CLI will exchange the authorization code for one or more tokens (access, id, and/or refresh).
-- The tokens are logged to the console.
+* From a terminal command line, run the CLI with the command `node cli.js`. The default browser should be launched to the `/authorize` endpoint where the user can login with credentials in an Auth0 connection that is enabled for the application.
+* After first authentication, a consent dialog should be displayed.
+* Once consent is given, the response will be redirected to the callback/redirect URL where the CLI will retrive the authorization code.
+  * At this point the user can close the browser window/tab as they are no longer needed. Unfortunately, most browsers prevent closing programmatically (e.g., writing `<script>window.close();</script>` in the response output) when the window is opened by another process.
+* Finally, the CLI will exchange the authorization code for one or more tokens (access, id, and/or refresh).
+* The tokens are logged to the console.
 
